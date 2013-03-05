@@ -100,7 +100,6 @@ Final 2010
 LatexCommand href
 name "PDF"
 target "./files/metrics_2010_final.pdf"
-type "file:"
 
 \end_inset
 
@@ -247,7 +246,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/metrics_comp_2007spr.pdf"
-type "file:"
 
 \end_inset
 
@@ -364,7 +362,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/metrics_comp_2008spr.pdf"
-type "file:"
 
 \end_inset
 
@@ -782,7 +779,7 @@ Last, but not least, we want to actually solve for the argmax b:
 \begin_inset Formula 
 \begin{align*}
 \frac{\partial Q(b)}{\partial b} & =2\frac{\Phi(p)}{\Phi(b)}\phi(b)-\frac{(1-\Phi(p))}{(1-\Phi(b))}\phi(b)=0\\
- & =2\phi(b)\left\{\frac{\Phi(p)}{\Phi(b)}-\frac{(1-\Phi(p))}{(1-\Phi(b))}\right\}=0
+ & =2\phi(b)\left\{ \frac{\Phi(p)}{\Phi(b)}-\frac{(1-\Phi(p))}{(1-\Phi(b))}\right\} =0
 \end{align*}
 
 \end_inset
@@ -867,7 +864,7 @@ Take first order conditions
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\frac{\partial Q}{\partial b_{j}} & =\phi(b_{j})\left\{\frac{\Phi(p_{j})}{\Phi(b_{j})}-\frac{1-\Phi(p_{j})}{1-\Phi(b_{j})}\right\}=0
+\frac{\partial Q}{\partial b_{j}} & =\phi(b_{j})\left\{ \frac{\Phi(p_{j})}{\Phi(b_{j})}-\frac{1-\Phi(p_{j})}{1-\Phi(b_{j})}\right\} =0
 \end{align*}
 
 \end_inset
@@ -934,7 +931,7 @@ We already computed the first order condition
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\frac{\partial Q_{n}}{\partial b_{j}} & =\frac{1}{n}\sum_{i=1}^{n}\left\{\frac{y_{ij}\phi(b_{j})}{\Phi(b_{j})}-\frac{(1-y_{1j})\phi(b_{j})}{1-\Phi(b_{j})}\right\}=0\\
+\frac{\partial Q_{n}}{\partial b_{j}} & =\frac{1}{n}\sum_{i=1}^{n}\left\{ \frac{y_{ij}\phi(b_{j})}{\Phi(b_{j})}-\frac{(1-y_{1j})\phi(b_{j})}{1-\Phi(b_{j})}\right\} =0\\
  & =\phi(b_{j})\left\{ \frac{\bar{y}}{\Phi(b_{j})}-\frac{(1-\bar{y})}{1-\Phi(b_{j})}\right\} =0
 \end{align*}
 
@@ -1383,7 +1380,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/202seq_comp_2001spr.pdf"
-type "file:"
 
 \end_inset
 
@@ -2659,7 +2655,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/202seq_comp_2004spr.pdf"
-type "file:"
 
 \end_inset
 
@@ -2863,7 +2858,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/202seq_comp_2005aut.pdf"
-type "file:"
 
 \end_inset
 
@@ -3456,7 +3450,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/202seq_comp_2006spr.pdf"
-type "file:"
 
 \end_inset
 
@@ -3598,7 +3591,12 @@ Part b
 \end_layout
 
 \begin_layout Standard
-Because player 1 has greater endowment then he will own it.
+Player 1 gets the diamond because we just showed that there are increasing
+ differences in endowment and the diamond.
+ Increasing differences says that with higher endowment, the optimal consumption
+ of diamond is weakly increasing.
+ Thus, we would expect that the first person with his larger endowment will
+ end up with the diamond.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3699,6 +3697,14 @@ u(e_{2}+\frac{1}{2}p,0) & \geq u(e_{2}-\frac{1}{2}p,1)
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -4031,7 +4037,6 @@ type "file:"
 LatexCommand href
 name "Online"
 target "http://economics.stanford.edu/files/EconComps/210seq_comp_2009spr.pdf"
-type "file:"
 
 \end_inset
 
