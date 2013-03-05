@@ -3700,11 +3700,293 @@ u(e_{2}+\frac{1}{2}p,0) & \geq u(e_{2}-\frac{1}{2}p,1)
 
 \end_layout
 
+\begin_layout Standard
+For all 
+\begin_inset Formula $x>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u(e-x,1)-u(e+x,0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is strcitly increasing in 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
 Part d
 \end_layout
 
 \begin_layout Standard
+We know that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e_{1}\geq e_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That means that we can explore both cases: 
+\begin_inset Formula $e_{1}>e_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $e_{1}=e_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We know that any equilibrium must satisfy the condition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+u(e_{1}-\frac{1}{2}p,1) & \geq u(e_{1}+\frac{1}{2}p,0)\\
+u(e_{2}+\frac{1}{2}p,0) & \geq u(e_{2}-\frac{1}{2}p,1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or written differently
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+u(e_{1}-\frac{1}{2}p,1) & -u(e_{1}+\frac{1}{2}p,0)\geq0\\
+0 & \geq u(e_{2}-\frac{1}{2}p,1)-u(e_{2}+\frac{1}{2}p,0)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combined to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+u(e_{1}-\frac{1}{2}p,1) & -u(e_{1}+\frac{1}{2}p,0)\geq u(e_{2}-\frac{1}{2}p,1)-u(e_{2}+\frac{1}{2}p,0)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, multiple equilibria
+\end_layout
+
+\begin_layout Subsubsection
+Part e
+\end_layout
+
+\begin_layout Standard
+First, we figure out if the possibilities frontier is convex or concave
+ by using the inverse function theorem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+u_{2}(\bar{e}-x,1) & =(\bar{e}-g^{-1}(u_{1}),1)\\
+u_{1}(x,D) & =g(x)\\
+x & =g^{-1}(u_{1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial u_{2}}{\partial u_{1}} & =u_{c}(\bar{e}-x,1)[-\frac{\partial g^{-1}(u_{1})}{\partial u_{1}}]\\
+ & =-\frac{u_{c}(\bar{e}-x,1)}{u_{c}(x,0)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so we have concave.
+\end_layout
+
+\begin_layout Standard
+We still need to know if 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+u(0,1) & =u_{2}\\
+u(\bar{e},0) & =u_{1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It can't be true that 
+\begin_inset Formula 
+\[
+u(0,1)>u(\bar{e},0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+because we have an equilibrium so they are willing to trade.
+\end_layout
+
+\begin_layout Standard
+Thus we get that either 
+\begin_inset Formula $u_{2}=u_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $u_{2}<u_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+How do we know that there is a kink in the graph?
+\end_layout
+
+\begin_layout Standard
+The marginal rate of substitution between them is
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+-\frac{u_{c}(\bar{e}-x,1)}{u_{c}(x,0)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{c}(\bar{e},0)<u_{c}(0,0)<u_{c}(0,1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and that has absolute value greater than 1.
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Graphics
+	filename figures/micro_2006s_comp_q2_e.pdf
+	width 5in
+	height 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part f
+\end_layout
+
+\begin_layout Standard
+If you look at the kind then you can see that any convex combination that
+ has the connecting line going over the indent will provide better expected
+ utility.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E(u) & = & \frac{1}{2}u(c,1)+\frac{1}{2}u(e_{1}+e_{2}-c,0)\\
+c & \in & [0,e_{1}+e_{2}]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To find the max allocation just look for the slope = -1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{c}(c,1)=u_{c}(\bar{e}-c,0)
+\]
+
+\end_inset
+
 
 \end_layout
 
