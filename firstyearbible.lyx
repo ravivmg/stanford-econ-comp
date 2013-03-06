@@ -702,6 +702,108 @@ Yes it reaches because it is log likelihood correctly specified.
 \end_layout
 
 \begin_layout Subsection
+Question 1 (First Quarter)
+\end_layout
+
+\begin_layout Standard
+Recall that in general, the LR test statistic goes in distribution to Chi-Square
+ with 1 degree of freedom (because only one restriction in most cases).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+H_{0}:\mu & =\mu_{0}\\
+H_{1}:\mu & \neq\mu_{0}\\
+X_{i} & \sim N(\mu,1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lambda_{x} & =2\log L(\hat{\mu}x)-\log L(\mu_{0})\\
+ & =\sum(x_{i}-\mu_{0})^{2}-\sum(x_{i}-\bar{x})^{2}\\
+ & =\sum(x_{i}^{2}-2x_{i}+\mu_{0}^{2}-x_{i}^{2}+2x_{i}\bar{x}-\bar{x}^{2})\\
+ & =-2n\mu_{0}\bar{x}+n\mu_{0}^{2}+\frac{2n\bar{x}^{2}-n\bar{x}^{2}}{n\bar{x}^{2}}\\
+ & =(\frac{\bar{x}-\mu_{0}}{n^{-1/2}})^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we have a standard normal squared.
+ Boom.
+ Chi-Square.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lambda_{y} & =2\log\frac{L(\bar{x},Y)}{L(\mu_{0},Y)}\\
+ & =\sum(y_{i}-\mu_{0})^{2}-\sum(y_{i}-\bar{x})^{2}\\
+ & =-2n\mu_{0}\bar{y}+n\mu_{0}^{2}+2n\bar{x}\bar{y}-n\bar{x}^{2}\\
+ & =n[\bar{y}^{2}-2\mu_{0}\bar{y}+\mu_{0}^{2}-\bar{y}^{2}+2\bar{x}\bar{y}-\bar{x}^{2}]\\
+ & =n[(\bar{y}^{2}-\mu_{0})^{2}-(\bar{y}-\bar{x})^{2}]\\
+ & =n[2(\bar{y}-\mu_{0})(\bar{x}-\mu_{0})-(\bar{x}-\mu_{0})^{2}]\\
+ & =2\sqrt{n}(\bar{y}-\mu_{0})\sqrt{n}(\bar{x}-\mu_{0})-(\sqrt{n}(\bar{x}-\mu_{0}))^{2}\\
+z_{x} & =\sqrt{n}(\bar{x}-\mu_{0})\\
+z_{y} & =\sqrt{n}(\bar{y}-\mu_{0})\\
+E(\lambda_{y}) & =2E(z_{y})E(z_{x})-E(z_{x}^{2})=-1\\
+Var(2z_{y}z_{x}) & =4(E(z_{y}^{2})E(z_{x}^{2})-E()^{2}E()^{2})=4\\
+Cov(2z_{y},z_{x}) & =0\\
+Var(z_{x}^{2}) & =2\\
+Var(\lambda_{y}) & =Var(2z_{y}z_{x})+Var(z_{x}^{2})-2Cov(2z_{y}z_{x},z_{x}^{2})\\
+ & =4+2\\
+ & =6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+We know that MLE maxes the log likelihood function, so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P(\lambda_{x} & >c)>P(\lambda_{y}>c)\\
+L(\bar{y};Y) & \geq L(\text{anything else};Y)\\
+ & \geq L(\bar{x};Y)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Question 3 (?)
 \end_layout
 
