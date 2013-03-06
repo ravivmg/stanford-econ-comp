@@ -369,6 +369,339 @@ target "http://economics.stanford.edu/files/EconComps/metrics_comp_2008spr.pdf"
 \end_layout
 
 \begin_layout Subsection
+Question 1 (Wolak)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+In the true DGP, we see that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E(y_{t}|x_{1t},x_{2t}) & = & \beta_{1}x_{1t}+\beta_{2}x_{2t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which shows that we are in a linear conditional mean world.
+ Thus, we know that the plim of the unrestricted OLS regression will go
+ the true DGP parameters:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+b_{1} & \to_{p}\beta_{1}\\
+b_{2} & \to_{p}\beta_{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also see that 
+\backslash
+eta is iid, so we can jump straight to saying
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}(b-\beta) & \to_{d}N(0,\sigma^{2}Q^{-1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we wanted to say a word or two more we could have written it out as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}(b-\beta) & =(\frac{X'X}{T})^{-1}(\frac{X'\eta}{\sqrt{T}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know from the setup that the first term on the right hand side goes to
+ Q^-1 in probability.
+\end_layout
+
+\begin_layout Standard
+We have to use Lindenberg-Feller for the second term because the constants
+ are independent but different samples are not identically distributed because
+ the scalars will be different.
+ The second term goes to 
+\begin_inset Formula $N(0,\sigma^{2}Q^{-1})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Do the Slusky.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+We can directly compute
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\min_{\beta}\sum_{t=1}^{T}(y_{t}-\beta x_{1t}-\beta^{2}x_{2t})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FOC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+2\sum(y_{t}-\beta x_{1t}-\beta^{2}x_{2t})(-x_{1t}-2\beta x_{2t}) & =0\\
+\sum y_{t}x_{1t}+\beta[2\sum y_{t}x_{2t}-\sum x_{1t}^{2}]-\beta^{2}[3[x_{1t}x_{2t}]-\beta^{3}[2\sum x_{2t}^{2}] & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mr.
+ Mathematica can figure out what you are supposed to do with that mess.
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+Version 1:
+\end_layout
+
+\begin_layout Standard
+We do our usual ABA thing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q_{T}(\beta) & =\frac{1}{T}\sum(y_{t}-x_{1t}\beta-x_{2t}\beta^{2})^{2}\\
+S_{T}(\beta)=\frac{\partial Q_{T}(\beta)}{\partial\beta} & =-\frac{2}{T}\sum(y_{t}-x_{1t}\beta-x_{2t}\beta^{2})(x_{1t}+2\beta x_{2t})\\
+H_{T}(\beta)=\frac{\partial S_{T}(\beta)}{\partial\beta} & =\frac{2}{T}\sum\{(x_{1t}+2\beta x_{2t})^{2}-2x_{1t}(y_{t}-x_{1t}\beta-x_{2t}\beta^{2})\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $b_{1}^{\star}$
+\end_inset
+
+ be the point where 
+\begin_inset Formula $S_{T}(b_{1}^{\star})=0$
+\end_inset
+
+ and the FOC are satisfied.
+ By Taylor expansion:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{T}(b_{1}^{\star}) & =0=S_{T}(\beta_{1})+H_{T}(\beta_{1})(b_{1}^{\star}-\beta_{1})\\
+0 & =S_{T}(\beta_{1})+H_{T}(\beta_{1})(b_{1}^{\star}-\beta_{1})\\
+-S_{T}(\beta_{1}) & =H_{T}(\beta_{1})(b_{1}^{\star}-\beta_{1})\\
+-H_{T}(\beta_{1})^{-1}S_{T}(\beta_{1}) & =(b_{1}^{\star}-\beta_{1})\\
+\beta_{1}-H_{T}(\beta_{1})^{-1}S_{T}(\beta_{1}) & =b_{1}^{\star}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}(b_{1}^{\star}-\beta) & =-H_{T}(\tilde{\beta}_{1})^{-1}\sqrt{T}S_{T}(\beta_{1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+-H_{T}(\tilde{\beta}_{1})^{-1} & \to_{p}-H_{0}^{-1}\\
+\sqrt{T}S_{T}(\beta_{1}) & \to_{d}N(0,H_{0}^{-1}V_{0}H_{0}^{-1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Why? Because we know that 
+\begin_inset Formula $\tilde{\beta}\in(b_{1}^{\star},\beta_{1})$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{1}^{\star}\to_{p}\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{1}\to_{p}\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let's evaluate at the true value.
+ Also, we need to take the limit because the asymptotic variance should
+ not have a T still in it.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E(H_{T}(\beta)) & =\frac{2}{T}\sum E(x_{1t}+2\beta_{1}x_{2t})^{2}-2x_{t}\eta_{t}\\
+ & =\frac{2}{T}\sum E(x_{1t}+2\beta_{1}x_{2t})^{2}\\
+\lim_{t\rightarrow\infty}E(H_{T}(\beta)) & =\lim\frac{2}{T}\sum E(x_{1t}+2\beta_{1}x_{2t})^{2}\\
+ & =2\begin{bmatrix}1 & 2\beta_{1}\end{bmatrix}\begin{bmatrix}\frac{1}{T}\sum x_{1t}^{2} & \frac{1}{T}\sum x_{1t}x_{2t}\\
+\frac{1}{T}\sum x_{1t}x_{2t} & \frac{1}{T}\sum x_{2t}^{2}
+\end{bmatrix}\begin{bmatrix}1\\
+2\beta_{1}
+\end{bmatrix}\\
+ & \to_{p}2u^{\prime}Qu=H_{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}S_{t}(\beta_{1}) & =\frac{1}{\sqrt{T}}\sum2\eta_{t}(x_{1t}+2x_{2t}\beta_{1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+V_{0} & =\lim Var(\frac{1}{\sqrt{T}}\sum2\eta_{t}(x_{1t}+2x_{2t}\beta_{1}))\\
+ & =\lim\frac{4}{T}\sum(x_{1t}+2x_{2t}\beta_{1})^{2}Var(\eta_{t})\\
+ & =4\sigma^{2}u^{\prime}Qu
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So plug in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{T}(b_{1}^{\star}-\beta_{1})\to_{d}N(0,H_{0}^{-1}V_{0}H_{0}^{-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta=\begin{bmatrix}\beta\\
+\sigma^{2}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q_{T}(\theta) & =-\frac{T}{2}\ln(2H)-\frac{T}{2}\ln(\sigma^{2})-\frac{1}{2T}[\sum((y_{t}-x_{1t}\beta-x_{2t}\beta^{2})/\sigma)^{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part e
+\end_layout
+
+\begin_layout Standard
+Yes it reaches because it is log likelihood correctly specified.
+\end_layout
+
+\begin_layout Subsection
 Question 3 (?)
 \end_layout
 
