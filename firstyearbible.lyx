@@ -1584,6 +1584,198 @@ Final 2005
 \end_layout
 
 \begin_layout Subsection
+Question 1 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+For Bidder #1: any strategy of bidding above v is strictly dominated by
+ bidding 0 because going above v will be a negative payoff.
+\end_layout
+
+\begin_layout Standard
+For Bidder #2: any strategy of bidding above v' because above v' is negative
+ and bidding 0 is payoff 0.
+\end_layout
+
+\begin_layout Standard
+If we iteratively delete dominated strategies then:
+\end_layout
+
+\begin_layout Enumerate
+Delete Bidder #1 bidding above v
+\end_layout
+
+\begin_layout Enumerate
+Then we get that bidding above v is dominated for Bidder #2 because the
+ payoff will be less than bidding at v.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+We can run through other cases:
+\end_layout
+
+\begin_layout Enumerate
+Both bid 0: no because then someone would diverge up
+\end_layout
+
+\begin_layout Enumerate
+Both bid 
+\backslash
+in (0,v): no because someone would diverge up
+\end_layout
+
+\begin_layout Enumerate
+They bid differently but within (0,v): no because someone would try to diverge
+ over the other
+\end_layout
+
+\begin_layout Enumerate
+They both bid v: Bidder #1 would be diverge by not bidding at all because
+ it is an all-pay auction and there is no reason for him to lose his bid.
+ But then there is no reason for Bidder 2 to be bidding that high either.
+\end_layout
+
+\begin_layout Standard
+No PSNE.
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+Because we deleted that strategy when doing iterated deletion of dominated
+ strategies then we know that there will be no probability weight placed
+ on that strategy.
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{2}(x)=(1-F_{1}(x))(-x)+F(x)(v^{\prime}-x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Know that any MSNE has to provide the same expected payoff for anything
+ in the support of the strategies.
+\end_layout
+
+\begin_layout Standard
+Bidder #2's CDF:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+(1-F_{1}(x))(-x)+F_{1}(x)(v^{\prime}-x) & =v^{\prime}F_{1}(x)-x=C\\
+F_{1}(v) & =1\\
+v^{\prime}F_{1}(v)-v & =v^{\prime}-v\\
+v^{\prime}F_{1}(x)-x & =v^{\prime}-v\\
+F_{1}(x) & =\frac{v^{\prime}-v+x}{v^{\prime}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bidder #1's CDF:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+(1-F_{2}(x))(-x)+F_{2}(x)(v-x) & =vF_{2}(x)-x\\
+vF_{2}(v)-v & =0\\
+vF_{2}(x)-x & =0\\
+F_{2}(x) & =\frac{x}{v}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part e
+\end_layout
+
+\begin_layout Standard
+The expected revenue from Bidder #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{v}xf_{1}(x)\mathrm{dx} & =\int_{0}^{v}x(\frac{1}{v^{\prime}})\mathrm{dx}=\frac{v^{2}}{2v^{\prime}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The expected revenue from Bidder #2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{v}xf_{2}(x)\mathrm{dx} & =\int_{0}^{v}x(\frac{1}{v})\mathrm{dx}=\frac{v^{2}}{2v}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the total expected revenue is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{v^{2}}{2v^{\prime}}+\frac{v}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Question 3 (Bernheim)
 \end_layout
 
