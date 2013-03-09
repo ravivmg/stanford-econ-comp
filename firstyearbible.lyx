@@ -1985,6 +1985,218 @@ E=\frac{1}{3}(1-\frac{1}{3}\delta)+\frac{1}{2}(\frac{2}{3}\delta\frac{1}{3})
 iv.
 \end_layout
 
+\begin_layout Section
+Final 2007
+\end_layout
+
+\begin_layout Subsection
+Question 3 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+We know that in the cooperative SPNE of a Bertrand with two firms, the two
+ firms would equally share the maximized profits.
+\end_layout
+
+\begin_layout Standard
+What is the stream of SPNE profits received by an individual firm from until
+ forever:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{t}^{\infty}\delta^{t}\frac{\pi(p)}{2}=\frac{1}{1-\delta}\frac{\pi(p)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What would be the stream of profits if a firm deviated? If someone did then
+ after the k_{-i} periods of detection lag, the deviating firm would get
+ 0 profit because the other firm would play monopoly and the deviating firm
+ would get 0 profits from then on:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{t=0}^{k_{-i}-1}\delta^{t}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the condition for the SPNE is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{1-\delta}\frac{\pi(p)}{2}\geq\sum_{t=0}^{k_{-i}-1}\delta^{t}\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, we can maximize the left hand side using the highest sustainable price
+ of 
+\begin_inset Formula $p^{m}$
+\end_inset
+
+ if the 
+\begin_inset Formula $\delta^{k}\geq1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Question 4 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pi/2,pi/2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pi,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pi,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pi/2,pi/2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To find the min-max, we write out the possibilities.
+ Let p be the prob that 1 plays a and q be the prob that 2 plays a.
+\end_layout
+
+\begin_layout Standard
+For player 1 the min-max
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\min_{q}\max_{p}pq\frac{\pi}{2}+p(1-q)\pi+(1-p)q\pi+(1-p)(1-q)\frac{\pi}{2} & =\min_{q}\max_{p}pq\frac{\pi}{2}+p(1-q)\pi+(1-p)q\pi+(1-p)(1-q)\frac{\pi}{2}\\
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Comps
 \end_layout
@@ -4923,6 +5135,238 @@ Setting aggregate consumption equal in both states (which makes sense if
 \begin_layout Standard
 so the price of the asset divided by 100 is equal to the probability of
  the realization of that state.
+\end_layout
+
+\begin_layout Section
+Final 2012
+\end_layout
+
+\begin_layout Subsection
+Question 1 (Piazzesi)
+\end_layout
+
+\begin_layout Subsubsection
+Part 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+U(C) & =E\left[\sum_{t=0}^{\infty}\beta^{t}\frac{C_{t}^{1-\alpha}}{1-\alpha}\right]\\
+g(a) & =E\left[\sum_{t=0}^{\infty}\beta^{t}\frac{(C_{t}+ax)^{1-\alpha}}{1-\alpha}\right]\\
+g^{\prime}(a) & =E\left[\sum_{t=0}^{\infty}\beta^{t}(C_{t}+ax)^{-\alpha}x\right]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the Riesz representation is 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\delta U(C)=E\left[\sum_{t=0}^{\infty}\beta^{t}(C_{t})^{-\alpha}x\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the state price deflator is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\pi_{t}=\beta^{t}(C_{t})^{-\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 2
+\end_layout
+
+\begin_layout Standard
+The pricing kernel is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\pi_{t+1}}{\pi_{t}} & =\frac{\beta^{t+1}(C_{t+1})^{-\alpha}}{\beta^{t}(C_{t})^{-\alpha}}\\
+ & =\beta(\frac{C_{t+1}}{C_{t}})^{-\alpha}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 3
+\end_layout
+
+\begin_layout Standard
+The price of the risk free bond is calculated on line #43.
+\end_layout
+
+\begin_layout Standard
+No change is necessary for the code because the MP model assumes complete
+ markets so the addition of another asset (in zero net supply) will not
+ change the price of a risk free bond.
+ You can think about it as because we have unique state prices.
+ The price of a risk free bond is the sum of state prices.
+ Therefore, the price of the risk free bond doesn't change.
+\end_layout
+
+\begin_layout Subsubsection
+Part 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S_{t}^{e} & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\frac{u^{\prime}(c_{s})}{u^{\prime}(c_{t})}D_{s}\right)\right]\\
+ & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\frac{u^{\prime}(C_{s})}{u^{\prime}(C_{t})}C_{s}^{b}\right)\right]\\
+ & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\frac{C_{s}}{C_{t}}\right)^{-\alpha}C_{s}^{b}\right]\\
+ & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\frac{C_{s}}{C_{t}}\right)^{b-\alpha}C_{t}^{b}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can use
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+C_{s} & =C_{s-1}x_{s}=...=C_{t}\prod_{t+1}^{s}x_{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+S_{t}^{e} & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\frac{C_{t}\prod_{t+1}^{s}x_{i}}{C_{t}}\right)^{b-\alpha}C_{t}^{b}\right]\\
+ & =E_{t}\left[\sum_{s>t}\beta^{s-t}\left(\prod_{t+1}^{s}x_{i}\right)^{b-\alpha}C_{t}^{b}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S(c,i) & =E\left[\beta\left(\frac{u^{\prime}(c_{t+1})}{u^{\prime}(c_{t})}(S_{t+1}+D_{t+1})\right)\right]\\
+ & =E\left[\beta\left((\frac{c_{t+1}}{c_{t}})^{-\alpha}(S(c_{t+1})+D_{t+1})\right)\right]\\
+ & =E\left[\beta\left((\frac{\lambda c}{c})^{-\alpha}(S(\lambda c,j)+(\lambda c)^{b}\right)\right]\\
+ & =E\left[\beta\left(\lambda{}^{-\alpha}(S(\lambda c,j)+(\lambda c)^{b}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S(c,i) & =c^{b}w_{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+c^{b}w_{i} & =\sum q_{ij}\beta\lambda_{j}^{-\alpha}(c^{b}\lambda_{j}^{b}w_{j}+(c\lambda_{j})^{b})\\
+w_{i} & =\sum q_{ij}\beta\lambda_{j}^{-\alpha}(\lambda_{j}^{b}w_{j}+\lambda_{j}{}^{b})\\
+ & =\sum q_{ij}\beta\lambda_{j}^{b-\alpha}(w_{j}+1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}w_{1}\\
+...\\
+w_{n}
+\end{pmatrix} & =\beta\begin{pmatrix}q_{11}\lambda_{1}^{b-a}\\
+... & ...\\
+q_{n1}\lambda_{n}^{b-a}
+\end{pmatrix}\begin{pmatrix}w+1\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we would need to initialize a b value.
+\end_layout
+
+\begin_layout Standard
+Replace line 54 with A(i,j) = beta * q(i,j) * lambda(j)^(b-alpha)
+\end_layout
+
+\begin_layout Standard
+Replace line 66 with r(i,j) = lambda(j)^b * (1+w(j))/w(i)-1
 \end_layout
 
 \begin_layout Chapter
