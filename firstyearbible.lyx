@@ -2185,16 +2185,91 @@ For player 1 the min-max
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\min_{q}\max_{p}pq\frac{\pi}{2}+p(1-q)\pi+(1-p)q\pi+(1-p)(1-q)\frac{\pi}{2} & =\min_{q}\max_{p}pq\frac{\pi}{2}+p(1-q)\pi+(1-p)q\pi+(1-p)(1-q)\frac{\pi}{2}\\
+\min_{q}\max_{p}pq\frac{\pi}{2}+p(1-q)\pi+(1-p)q\pi+(1-p)(1-q)\frac{\pi}{2}\\
 \end{align*}
 
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\pi-q\frac{\pi}{2} & \text{if }q<\frac{1}{2}\\
+\frac{\pi}{2}+q\frac{\pi}{2} & \text{if }q>\frac{1}{2}\\
+\frac{3}{4}\pi & \text{if }q=\frac{1}{2}
+\end{cases}
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Thus the minmax for firm 1 is 
+\begin_inset Formula $\frac{3}{4}\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For firm 2 the min-max is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\min_{p}\max_{q}pq\frac{\pi}{2}+(1-p)(1-q)\frac{\pi}{2}\\
+\min\max pq\frac{\pi}{2}+(1-p-q+pq)\frac{\pi}{2}\\
+\min\max q(p\pi-\frac{\pi}{2})+\frac{\pi}{2}-\frac{p\pi}{2}\\
+\min\max q\frac{\pi}{2}(2p-1)+\frac{\pi}{2}-p\frac{\pi}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\frac{\pi}{2}-p\frac{\pi}{2} & \text{if }p<\frac{1}{2}\\
+p\frac{\pi}{2} & \text{if }p>\frac{1}{2}\\
+\frac{1}{4}\pi & \text{if }p=\frac{1}{2}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the min max for firm 2 is 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+ when 
+\begin_inset Formula $p=1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+The folk theorem say that any NE of an infinitely repeated game must provide
+ an average payoff greater than or equal to their minmax.
+ But because in this game, if one firm gains then the other firm loses,
+ so we know that the NE of an infinite game will be their minmax.
 \end_layout
 
 \begin_layout Chapter
