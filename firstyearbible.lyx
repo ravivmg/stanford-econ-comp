@@ -1776,6 +1776,14 @@ So the total expected revenue is
 \end_layout
 
 \begin_layout Subsection
+Question 2 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Subsection
 Question 3 (Bernheim)
 \end_layout
 
@@ -2042,9 +2050,14 @@ So the condition for the SPNE is
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\frac{1}{1-\delta}\frac{\pi(p)}{2}\geq\sum_{t=0}^{k_{-i}-1}\delta^{t}\pi
-\]
+\begin{align*}
+\frac{1}{1-\delta}\frac{\pi}{2} & \geq\sum_{t=0}^{k_{-i}-1}\delta^{t}\pi\\
+\frac{1}{1-\delta}\frac{1}{2} & \geq\sum_{t=0}^{k_{-i}-1}\delta^{t}\\
+\frac{1}{2} & \geq(1-\delta)\sum_{t=0}^{k_{-i}-1}\delta^{t}\\
+\frac{1}{2} & \geq(\sum_{t=0}^{k_{-i}-1}\delta^{t}-\delta\sum_{t=0}^{k_{-i}-1}\delta^{t})\\
+\frac{1}{2} & \geq1-\delta^{k-1}\\
+\delta^{k-1} & \geq\frac{1}{2}
+\end{align*}
 
 \end_inset
 
@@ -2270,6 +2283,253 @@ The folk theorem say that any NE of an infinitely repeated game must provide
  an average payoff greater than or equal to their minmax.
  But because in this game, if one firm gains then the other firm loses,
  so we know that the NE of an infinite game will be their minmax.
+\end_layout
+
+\begin_layout Section
+Final 2011
+\end_layout
+
+\begin_layout Subsection
+Question 3 (Bernheim)
+\end_layout
+
+\begin_layout Standard
+Payoff matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}3,3 & 1,4\\
+4,1 & 0,0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+Pure Strategy Nash Equilibria
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+(F,S)\\
+(S,F)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mixed Strategy Nash Equilibria
+\end_layout
+
+\begin_layout Standard
+Let p be the prob that A plays S and q be the prob that B plays S
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+3q+1(1-q) & =4q+0(1-q)\\
+1/2 & =q\\
+3p+1(1-p) & =4p+0(1-p)\\
+1/2 & =p
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that the mixed strategy payoff of (2,2) is greater than the Pure Nash
+ Equilibria.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+The highest symmetric payoff would be when the most probabilty is placed
+ on S,S and the least is placed on F,F.
+ Therefore, we can put equal probs on S,F and F,S such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P(S,S) & =1-2\lambda\\
+P(S,F) & =\lambda\\
+P(F,S) & =\lambda\\
+P(F,F) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now do the correlated payoffs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E_{2}(g(S,s_{2})|S,\delta) & =3\frac{1-2\lambda}{1-2\lambda+\lambda}+1\frac{\lambda}{1-2\lambda+\lambda}=\frac{3-5\lambda}{1-\lambda}\\
+E_{2}(g(S,s_{2})|F,\delta) & =3\lambda\\
+E_{2}(g(F,s_{2})|S,\delta) & =4\frac{1-2\lambda}{1-2\lambda+\lambda}+0\frac{\lambda}{1-2\lambda+\lambda}=\frac{4-8\lambda}{1-\lambda}\\
+E_{2}(g(F,s_{2})|F,\delta) & =4
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plug into a correlated matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}\frac{3-5\lambda}{1-\lambda} & \frac{4-8\lambda}{1-\lambda}\\
+3\lambda & 4
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To have a correlated equilibrium then we need the highest payoffs on the
+ diagnol
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+3-5\lambda & \geq4-8\lambda\\
+\lambda & \geq1/3\\
+3\lambda & \geq4\\
+\lambda & \geq4/3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But to have the highest symmetric payoff we need the highest probability
+ on S,S, so make 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ as small as possible: 
+\begin_inset Formula $\lambda=1/3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+We know that in the second period, both parties will want to play a Nash
+ Equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Know that the Pure Strategy Nash Equilibria make it so that one of the players
+ will receive their minmax.
+\end_layout
+
+\begin_layout Standard
+Thus, if I know that I am going to be 
+\begin_inset Quotes eld
+\end_inset
+
+punished
+\begin_inset Quotes erd
+\end_inset
+
+ by getting my minmax next period, then why not be 
+\begin_inset Quotes eld
+\end_inset
+
+devious
+\begin_inset Quotes erd
+\end_inset
+
+ and go for the max payoff I can in the first period.
+ In other words, I have no incentive to be cooperating in the first period
+ because you can't punish me any worse in the second period.
+\end_layout
+
+\begin_layout Standard
+Therefore, if you want me people to coordinate in the first period with
+ S,S then you need to give them incentive: make the second period be a mixed
+ strategy such that they both receive 2 (better than they would get playing
+ Pure Nash) if and only if they played S,S in first period.
+ 
+\end_layout
+
+\begin_layout Standard
+How could we get them to adhere to this strategy? We would need them not
+ to deviate and the only punishment that we have is the minmax.
+ So we need
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+3+2\delta & \geq4+\delta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That says that the payoff from playing cooperatively the first period and
+ then playing cooperatively the mixed strategy in the second discounted
+ period (left) is greater than going for a deviation the first period and
+ getting punished with a minmax in the next discounted period (right).
+\end_layout
+
+\begin_layout Standard
+The problem is that this says that 
+\begin_inset Formula $\delta\geq1$
+\end_inset
+
+.
+ But we know that we can never have a discount rate, 
+\begin_inset Formula $\delta$
+\end_inset
+
+, greater than 1.
+ Thus, there is no way to get a cooperative S,S outcome in the first that
+ is SPE
 \end_layout
 
 \begin_layout Chapter
