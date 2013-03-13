@@ -5280,6 +5280,254 @@ u_{c}(c,1)=u_{c}(\bar{e}-c,0)
 
 \end_layout
 
+\begin_layout Section
+Comp 2009 Spring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/micro_2009s_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/EconComps/202seq_comp_2009spr.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 6 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+President has two information sets, one when he receives a g and one when
+ he recieves a b: 
+\begin_inset Formula ${(E,N)\times(E,N)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Economist has three information sets, when he is ignorant, when he is knowledgab
+le and good, when he is knowledgable and bad: 
+\begin_inset Formula ${(g,b)\times(g,b)\times(g,b)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+In this setup then only sends signal when he is K and G:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(g)=P(K)P(G)=\frac{1}{4}\cdot\frac{1}{4}=\frac{1}{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+President would know that he is getting K advice so he would enact
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(K|g)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part i
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(b)=P(b|K)+P(b|I)=\frac{3}{4}\cdot\frac{1}{4}+\frac{3}{4}=\frac{15}{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(b,G)=P(I)P(G)=\frac{3}{4}\cdot\frac{1}{4}=\frac{3}{16}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(G|b)=\frac{P(b,G)}{P(b)}=\frac{3/16}{15/16}=\frac{1}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that he would not enact if he received a bad signal becuase
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E(Payoff|b)=\frac{1}{5}\cdot1+\frac{4}{5}(-1)=-\frac{3}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part ii
+\end_layout
+
+\begin_layout Standard
+There are two possibilities on the equilibrium path
+\end_layout
+
+\begin_layout Enumerate
+He sees g and enacts
+\begin_inset Formula 
+\[
+P(K|g)=\frac{\frac{1}{4}}{\frac{1}{4}}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+He sees b and doesn't enact: 
+\begin_inset Formula 
+\[
+P(K|b)=\frac{\frac{3}{4}\cdot\frac{1}{4}}{\frac{3}{4}+\frac{3}{4}\cdot\frac{1}{4}}=\frac{1}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Off the equilibrium path
+\end_layout
+
+\begin_layout Standard
+You could have any belief between 0 and 1
+\end_layout
+
+\begin_layout Subsubsection
+Part iii
+\end_layout
+
+\begin_layout Standard
+Check sequential rationality:
+\end_layout
+
+\begin_layout Standard
+If the president receives a b then he will play N and the economist receives
+ 
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Say instead that the ignorant economist plays g.
+ Then the president will E.
+ One quarter of the time the economist will get a payoff of 1.
+ In 3/4 of the cases then the president will recieve -1 and then hit the
+ economist with a payoff of 
+\begin_inset Formula $\mu\in[0,1)$
+\end_inset
+
+.
+ For any of these mu he will prefer to play g then.
+\end_layout
+
+\begin_layout Section
+Comp 2012 Spring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/micro_2012f_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/Sept%202012%20micro%20comp_1.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 3 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Macro
 \end_layout
