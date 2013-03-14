@@ -1580,6 +1580,62 @@ Finals
 \end_layout
 
 \begin_layout Section
+Final 2003
+\end_layout
+
+\begin_layout Subsection
+Question 1 (Bernheim)
+\end_layout
+
+\begin_layout Standard
+Both Lilo and Tim have strategy sets of functions from the money in their
+ boxes ([0,100]) to all the non-negative real value bids.
+\end_layout
+
+\begin_layout Standard
+We can show that each of them naming the money in their own box is a Bayes
+ Equailibrium.
+\end_layout
+
+\begin_layout Standard
+Let m be the money in each of their boxes.
+\end_layout
+
+\begin_layout Standard
+If one person plays that strategy than the best repsonse of the other person
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{b_{1}} & \int_{0}^{100}\frac{1}{100}\frac{(b_{1}+m_{2})}{2}1_{\{b_{1}+b_{2}\leq m_{1}+m_{2}\}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that given that the other player names 
+\begin_inset Formula $b_{2}=m_{2}$
+\end_inset
+
+then this function is increasing up to the point where 
+\begin_inset Formula $b_{1}=m_{1}$
+\end_inset
+
+ and after that is 0.
+ Thus, to maximize then the person will name 
+\begin_inset Formula $b_{1}=m_{1}$
+\end_inset
+
+.
+ Thus, no one wants to deviate from this equilibrium.
+\end_layout
+
+\begin_layout Section
 Final 2005
 \end_layout
 
@@ -2148,10 +2204,6 @@ So the total expected payoff is
 
 \begin_layout Subsubsection
 Part h
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section
