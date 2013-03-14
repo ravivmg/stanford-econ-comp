@@ -1994,6 +1994,167 @@ iv.
 \end_layout
 
 \begin_layout Section
+Final 2006
+\end_layout
+
+\begin_layout Subsection
+Question 3 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+Striclty dominated to bid over v because then even if you win then you will
+ get negative utility.
+ It's dominated by bidding 0 which will give you 0 utility for sure.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+There are no PSNE.
+ Consider the cases:
+\end_layout
+
+\begin_layout Enumerate
+If we are both at 0 then my best response is to deviate up over you.
+\end_layout
+
+\begin_layout Enumerate
+If I am higher than your bid but below v then I should deviate down until
+ I'm just above your bid.
+\end_layout
+
+\begin_layout Enumerate
+If we are both at v then I have an expected payoff of 
+\begin_inset Formula $\frac{1}{2}(-v)$
+\end_inset
+
+, which is negative so I would deviate to not bidding at all.
+\end_layout
+
+\begin_layout Standard
+Note also that if we both bid at 
+\begin_inset Formula $\frac{1}{2}v$
+\end_inset
+
+ then we have expected payoff of 0 but then I would want to deviate just
+ above, so also not PSNE.
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+No, becuase bidding above v is strictly dominated then we can be sure that
+ they will never bid with positive probability in an MSNE that high.
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g_{i}(b_{i}) & =(v-b_{i})F(b_{i})-b_{i}(1-F(b_{i}))\\
+ & =vF(b_{i})-b_{i}F(b_{i})-b_{i}+b_{i}F(b_{i})\\
+ & =vF(b_{i})-b_{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part e
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+ & vF(v)-v\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the payoff from a MSNE is 0.
+\end_layout
+
+\begin_layout Subsubsection
+Part f
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0 & =vF(b_{i})-b_{i}\\
+\frac{b_{i}}{v} & =F(b_{i})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part g
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E(payout_{i}) & =\int_{0}^{v}b_{i}\partial F(b_{i})\mathrm{d}b_{i}\\
+ & =\int_{0}^{v}b_{i}\frac{1}{v}\mathrm{d}b_{i}\\
+ & =\frac{1}{v}\int_{0}^{v}b_{i}\mathrm{d}b_{i}\\
+ & =\frac{v^{2}}{2v}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the total expected payoff is 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Part h
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
 Final 2007
 \end_layout
 
