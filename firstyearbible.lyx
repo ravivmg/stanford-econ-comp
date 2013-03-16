@@ -6445,6 +6445,295 @@ Say instead that the ignorant economist plays g.
 \end_layout
 
 \begin_layout Section
+Comp 2009 Fall
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/micro_2009f_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/202seq_comp_2009aut.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 6 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+A has one information set: (Undertake,Dont)
+\end_layout
+
+\begin_layout Standard
+B has four information sets, one for for each of A's decisions and whether
+ or not he is selfish: 
+\begin_inset Formula ${R^{+}\times R^{+}\times R^{+}\times R^{+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I'm using U for undertake, D for don't undertake, S for selfish, A for altruist
+\end_layout
+
+\begin_layout Standard
+Writing out the payoffs is helpful for me
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g_{B}(t,U|S) & =120-t\\
+g_{B}(t,D|S) & =90-t\\
+g_{B}(t,U|A) & =\min{120-t,t}\\
+g_{B}(t,U|A) & =\min\{90-t,10+t\}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In a subgame perfect situation then B will do whatever is best for himself
+ in the second stage without fear of retribution.
+ Thus, B will give 0 if S and U, 0 if S and D, 60 if A and U, 50 if A and
+ D.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60,60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90,10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50,50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g_{A}(U) & =\pi(0)+(1-\pi)(60)\\
+g_{A}(D) & =\pi(10)+(1-\pi)(50)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+B will give 0 if S and U, 0 if S and D, 60 if A and U, 50 if A and D.
+\end_layout
+
+\begin_layout Standard
+A will only undertake if 
+\begin_inset Formula $\pi\leq\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Enumerate
+Now B has: 
+\begin_inset Formula $g\times g\times t\text{ if selfish and U }\times t\text{ if selfish and D }\times t\text{ if alt and U }\times t\text{ if alt and D }$
+\end_inset
+
+.
+ A still has one info set: 
+\begin_inset Formula $f(g)\rightarrow{U,D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $g<g^{*}$
+\end_inset
+
+ then A doesn't undertake and B and A have payoffs: if selfish (90,90) and
+ if alt then (50,50).
+ If 
+\begin_inset Formula $g\geq g^{*}$
+\end_inset
+
+ then A undertakes so payoffs for B are 
+\begin_inset Formula $120-g^{*}-t$
+\end_inset
+
+.
+ To keep B from deviating and not giving 
+\begin_inset Formula $g=0$
+\end_inset
+
+ then you would need 
+\begin_inset Formula $g^{*}\leq30$
+\end_inset
+
+ if selfish and 
+\begin_inset Formula $g^{*}\leq70$
+\end_inset
+
+ if altruistic.
+\end_layout
+
+\begin_layout Enumerate
+We know that if g^* is above 30 then no selfish B would make that gift.
+ We know that if above 70 then not even the altruist would make that gift.
+ Thus, the separating equilibrium must have a g in between 30 and 70 where
+ player A will recognize it as a signal that player B is an altruist.
+ Now that A knows what B is we need to ensure that A doesn't go off and
+ screw things up by deviating.
+ If a gets a gift 
+\begin_inset Formula $g\in[30,70]$
+\end_inset
+
+, then he knows that B is an altruist.
+ A's payoffs when B is alt are 60 from U and 50 from Don't.
+ Therefore, to keep A from deviating, we need the gift to him to be less
+ than 50 or else A is not going to undertake.
+ Therefore, we have an eqm is 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $g\in[30,50]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+They all have the same payoffs.
+\end_layout
+
+\begin_layout Enumerate
+
+\end_layout
+
+\begin_layout Section
 Comp 2012 Spring
 \end_layout
 
