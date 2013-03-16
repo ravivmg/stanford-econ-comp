@@ -3417,6 +3417,194 @@ Set
  to get the mininmal discount rate.
 \end_layout
 
+\begin_layout Section
+Final 2012
+\end_layout
+
+\begin_layout Subsection
+Question 1 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Enumerate
+The contractor solves the problem
+\begin_inset Formula 
+\[
+\max_{\mu}R\mu-\mu^{2}
+\]
+
+\end_inset
+
+ so take the FOC and get the solution 
+\begin_inset Formula 
+\[
+\mu^{*}(R)=\frac{R}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now the DoD's decision is 
+\begin_inset Formula 
+\begin{align*}
+\max_{R}(B-R)\mu^{*}(R) & =\max_{R}(B-R)\frac{R}{2}\\
+\end{align*}
+
+\end_inset
+
+Do the FOC thing
+\begin_inset Formula 
+\[
+R^{*}=\frac{B}{2}
+\]
+
+\end_inset
+
+Now to get the probability we plug back into the optimal prob from part
+ i
+\begin_inset Formula 
+\[
+\mu^{*}(R^{*})=\frac{B/2}{2}=\frac{B}{4}
+\]
+
+\end_inset
+
+But wait! Recall that 
+\backslash
+mu is a probability and cannot be above 1, so write
+\begin_inset Formula 
+\[
+R^{*}=\begin{cases}
+0 & \text{if }B\leq0\\
+\frac{B}{2} & \text{if }0\leq B\leq4\\
+2 & \text{if }4\leq B
+\end{cases}
+\]
+
+\end_inset
+
+ so that we get
+\begin_inset Formula 
+\[
+\mu^{*}=\begin{cases}
+0 & \text{if }B\leq0\\
+\frac{B}{4} & \text{if }0\leq B\leq4\\
+1 & \text{if }4\leq B
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Enumerate
+Write out the payoffs
+\begin_inset Formula 
+\begin{align*}
+g(\mu_{1},\mu_{2}) & =\mu_{1}\mu_{2}\frac{R}{2}+\mu_{1}(1-\mu_{2})R-\mu_{1}^{2}\\
+\frac{\partial}{\partial\mu_{1}\partial\mu_{2}} & =\frac{R}{2}-R\\
+ & =-\frac{R}{2}
+\end{align*}
+
+\end_inset
+
+Thus, when you play aggresively then I play less aggresively.
+ Therefore, these are strategic substitutes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Do the FOC of the payoff
+\begin_inset Formula 
+\begin{align*}
+g & =\mu_{1}\mu_{2}\frac{R}{2}+\mu_{1}(1-\mu_{2})R-\mu_{1}^{2}\\
+FOC\\
+\mu_{1} & =\mu_{2}\frac{R}{4}+\frac{(1-\mu_{2})}{2}R
+\end{align*}
+
+\end_inset
+
+Set the two mu equal to each other
+\begin_inset Formula 
+\begin{align*}
+\mu & =\mu\frac{R}{4}+\frac{(1-\mu)}{2}R\\
+\mu(1-\frac{R}{4}+\frac{R}{2}) & =\frac{R}{2}\\
+\mu & =\frac{R}{2(1-\frac{R}{4}+\frac{R}{2})}\\
+ & =\frac{R}{2-\frac{R}{2}+R}\\
+ & =\frac{2R}{4-R+2R}\\
+ & =\frac{2R}{4+R}
+\end{align*}
+
+\end_inset
+
+so we get that this is the optimal probability and you can take the derivative
+ with respect to R to get that it is monotonically increasing in R.
+\end_layout
+
+\begin_layout Enumerate
+The probability is the probability that one firm makes it, that the second
+ firm makes it, or that both make it.
+ Do this as 1-P(both fail)
+\begin_inset Formula 
+\[
+1-(1-\frac{2R}{4+R})^{2}
+\]
+
+\end_inset
+
+ but make sure that you restrict the range of the R such that these are
+ still probabilities.
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+We now know the probability of success, so we can plug that into the firm's
+ max
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\begin{align*}
+\max_{R}(B-R)(1-(1-\frac{2R}{4+R})^{2})\\
+R & =\frac{2B}{4+B}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Comps
 \end_layout
