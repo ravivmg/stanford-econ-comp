@@ -2818,6 +2818,51 @@ Is that sequentially rational for Player 2
 NOT A PBE because not sequentially rational.
 \end_layout
 
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+We don't really need probabilities here:
+\end_layout
+
+\begin_layout Standard
+Say Player 1 mixes when at t_1 and plays L at t_2.
+ We know that Player 2 strictly prefers playing u so Player 1 at t_1 would
+ always go R and not mix.
+ Not a PBE.
+\end_layout
+
+\begin_layout Standard
+Say Player 1 mixes when at t_1 and plays R at t_2.
+ Say 
+\backslash
+theta is the probability that Player 1 at t_1 goes R.
+ Looking at Player 2's optimization problem, he compares
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{2}\theta(3)+\frac{1}{2}(1-\theta)(3)+\frac{1}{2}(0) & = & \frac{3}{2}\\
+\frac{1}{2}\theta(0)+\frac{1}{2}(1-\theta)(0)+\frac{1}{2}(2) & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, Player 2 always wants to go (u,u) no matter what the probability of
+ the mixing strategy and hence his beliefs.
+ Thus, in t_2 then Player 1 would want to deviate to play L-at-t_2 instead.
+\end_layout
+
+\begin_layout Standard
+NOT A PBE.
+\end_layout
+
 \begin_layout Section
 Final 2011
 \end_layout
