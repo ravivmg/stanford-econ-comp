@@ -1636,6 +1636,198 @@ then this function is increasing up to the point where
 \end_layout
 
 \begin_layout Section
+Final 2004
+\end_layout
+
+\begin_layout Subsection
+Question 2 (Bernheim)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2a,2a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a,a+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a+1,a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The setup is a little confusing.
+ If you donate then you and everyone else get a.
+\end_layout
+
+\begin_layout Standard
+N is not contribute.
+ C is contribute.
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+So the NE is only N,N.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+Again, this question is somewhat confusing.
+ For SPNE the general idea is to go to the last period and figure out what
+ the optimal thing to do is and then move backward.
+ In the last period, it costs money to punish and there is no discernable
+ benefit.
+ In the first period people are going to play their best strategy which
+ is just NE or (N,N).
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Enumerate
+My payoff is my monetary payoff discounted by some fraction of the amount
+ that the other guy did better than I did (if he did better than I did)
+ minus some fraction of how much I beat him (if I beat him).
+\end_layout
+
+\begin_layout Enumerate
+We know that in order to maximize your payoff then you should minimize the
+ last two terms.
+ The way get them both to be as small as possible if to have x_i=x_j.
+ There are two ways to accomplish that.
+ First, you can both contribute to get a payoff of 2a or you can both not
+ contribute to get a payoff of 1.
+ How do we know that someone won't deviate? We check the (C,C) case: 
+\begin_inset Formula $2a\geq a+1-\beta_{i}(1)$
+\end_inset
+
+.
+ For this to work then 
+\begin_inset Formula $a\geq1-\beta_{i}$
+\end_inset
+
+ .
+ What about deviating for (N,N)? Need 
+\begin_inset Formula $1\geq a-\alpha_{i}$
+\end_inset
+
+, so 
+\begin_inset Formula $\alpha_{i}+1\geq a$
+\end_inset
+
+, which must be true because 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ is already greater than 1 and a is less than 1.
+\end_layout
+
+\begin_layout Enumerate
+Say that w_1 and w_2 are the payouts from stage 1 of the game.
+ If w_1 is greater than w_2 will w_1 ever punish? No because that player
+ will lose a dollar for every dollar of punishment he metes out, but he
+ will decrease his payoff by 
+\backslash
+beta_i p (1+K) which is ...???
+\end_layout
+
+\begin_layout Section
 Final 2005
 \end_layout
 
