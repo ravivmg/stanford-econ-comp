@@ -2499,6 +2499,326 @@ The folk theorem say that any NE of an infinitely repeated game must provide
 \end_layout
 
 \begin_layout Section
+Final 2009
+\end_layout
+
+\begin_layout Subsection
+Question 2 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+Always remember that a PBE has two components:
+\end_layout
+
+\begin_layout Enumerate
+Sequential rationality
+\end_layout
+
+\begin_layout Enumerate
+Apply Bayes where applicable.
+\end_layout
+
+\begin_layout Standard
+We also know that we are looking for separating equilibria, so eqms where
+ beliefs are 0 and 1.
+\end_layout
+
+\begin_layout Standard
+Say Player 1 goes R at 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and L at 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Player 2 must have belief 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+At the top right, Player 2 will play u-at-R to get his highest payoff.
+\end_layout
+
+\begin_layout Itemize
+Will Player 1 diverge and instead play L then? No becuase 2>1
+\end_layout
+
+\begin_layout Itemize
+At the bottom left, Player 2 will have belief 
+\begin_inset Formula $\gamma=0$
+\end_inset
+
+ and will play u-at-L.
+\end_layout
+
+\begin_layout Itemize
+Will Player 1 diverge? No because 2>1.
+\end_layout
+
+\begin_layout Itemize
+YES A SEPARATING PBE is (R,L) and (u,u)
+\end_layout
+
+\begin_layout Standard
+Say Player 1 goes L at 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and R at 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Player 2 must have belief 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+At the top right, Player 2 will play u-at-L to get his highest payoff.
+\end_layout
+
+\begin_layout Itemize
+Will Player 1 diverge and instead play R then? Not if Player 2 plays d-at-R.
+\end_layout
+
+\begin_layout Itemize
+The problem is that this is not sequentially rational since Player 2 would
+ do better to go u-at-R.
+\end_layout
+
+\begin_layout Itemize
+NOT A PBE.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+Say Player 1 goes L at 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and L at 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Player 2 has beliefs by Bayes: 
+\begin_inset Formula $\gamma=1/2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Player 2: 
+\begin_inset Formula $\frac{1}{2}3+\frac{1}{2}4>\frac{1}{2}0+\frac{1}{2}1$
+\end_inset
+
+, so she will play u-at-L.
+\end_layout
+
+\begin_layout Itemize
+Will Player 1 diverge and instead play R then? At the top, to keep Player
+ 1 from diverging to a higher payoff, Player 2 would need to play d-at-R.
+ 
+\end_layout
+
+\begin_layout Itemize
+When would this be sequentially rational for Player 2? If 
+\begin_inset Formula $\alpha*0+(1-\alpha)2\geq\alpha*3+(1-\alpha)*0$
+\end_inset
+
+ or 
+\begin_inset Formula $\alpha\leq\frac{2}{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Is this a PBE? Yes, because we can choose 
+\backslash
+alpha however we want off the eqm path.
+\end_layout
+
+\begin_layout Itemize
+YES a PBE: (L,L) and (u-at-Left, d-at-Right, 
+\begin_inset Formula $\alpha\leq\frac{2}{5}$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+Now to check if a sequential equilibrium:
+\end_layout
+
+\begin_layout Itemize
+Put probabilities such that they create a mixed strategy for Player 1 such
+ that he will play L-at-
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and L-at-
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ and the beliefs of Player 2 will be 
+\begin_inset Formula $\alpha\leq2/5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+For concretness, say that we want an SE with L-at-
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and L-at-
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ and (u-at-Left, d-at-Right, 
+\begin_inset Formula $\alpha=\frac{1}{5}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Say Player 1 plays L-at-
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-\epsilon_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Say Player 1 plays L-at-
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-4\epsilon_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Say 
+\begin_inset Formula $\epsilon_{n}\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By Bayes
+\begin_inset Formula 
+\[
+\frac{(1)\epsilon_{n}}{\epsilon_{n}+4\epsilon_{n}}\rightarrow\frac{1}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+There are no subgames here, so the only subgame perfect Nash will be the
+ NEs.
+ We can see that R at 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and R at 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ and (u-at-Right, d-at-Left) will be an NE.
+\end_layout
+
+\begin_layout Standard
+For the PBE, say Player 1 goes R at 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and R at 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+By Bayes rule you can say that Player 2 has beliefs: 
+\begin_inset Formula $\alpha=1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Player 2: 
+\begin_inset Formula $\frac{1}{2}3+\frac{1}{2}0>\frac{1}{2}0+\frac{1}{2}2$
+\end_inset
+
+, so she will play u.
+\end_layout
+
+\begin_layout Itemize
+Will Player 1 diverge and instead play L then? Not if Player 2 plays d-at-Left.
+\end_layout
+
+\begin_layout Itemize
+Is that sequentially rational for Player 2
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma*0+(1-\gamma)1\geq\gamma*3+(1-\gamma)*4$
+\end_inset
+
+, so we can't find beliefs to make this sequentially rational.
+\end_layout
+
+\begin_layout Itemize
+NOT A PBE because not sequentially rational.
+\end_layout
+
+\begin_layout Section
 Final 2011
 \end_layout
 
