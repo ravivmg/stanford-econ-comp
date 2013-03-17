@@ -2246,6 +2246,175 @@ Final 2006
 \end_layout
 
 \begin_layout Subsection
+Question 2 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+We want
+\begin_inset Formula 
+\[
+P(p_{1}\leq v)=1-P(v\leq p_{1})=1-p_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But we need to put some constraints to keep this a probability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Prob=\begin{cases}
+1-p_{1} & \text{if }p_{1}\leq1\\
+0 & \text{if }p_{1}>1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The firm solves the problem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{p_{1}}(1-p_{1})p_{1}\\
+p_{1}^{*} & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Enumerate
+If p_1 < p_2 then the buyer is only going to buy in the first period if
+ at all.
+ Then the probability that the buyer purchases the item is just 
+\begin_inset Formula 
+\[
+1-p_{1}
+\]
+
+\end_inset
+
+ while the probability of sale in the second period is 0.
+\end_layout
+
+\begin_layout Enumerate
+Indifference would occur (given that the item is going to be bought) when
+\begin_inset Formula 
+\begin{align*}
+\tilde{v}-p_{1} & =\delta(\tilde{v}-p_{2})\\
+\tilde{v} & =\frac{p_{1}-\delta p_{2}}{1-\delta}
+\end{align*}
+
+\end_inset
+
+ If 
+\begin_inset Formula $\tilde{v}\leq1$
+\end_inset
+
+ then if you have a higher valuation then this indifference then you have
+ that the left-side of the equation is now larger than the right side because
+ the 
+\backslash
+delta can no longer deflate the right side to be equal.
+ You can also see this by showing that 
+\begin_inset Formula $v-p_{1}-\delta v-\delta p_{2}$
+\end_inset
+
+, which is the utility from buying in the first period rather than the second
+ is increasing in v.
+\end_layout
+
+\begin_layout Enumerate
+Say p_1 
+\backslash
+leq p_2.
+ The expected revenue is
+\begin_inset Formula 
+\[
+p_{1}(1-p_{1})
+\]
+
+\end_inset
+
+Say that p_1 
+\backslash
+geq p_2 but is less than the break even point.
+ The expected revenue is
+\begin_inset Formula 
+\[
+p_{1}(1-\frac{p_{1}-\delta p_{2}}{1-\delta})+\delta p_{2}(\frac{p_{1}-\delta p_{2}}{1-\delta})
+\]
+
+\end_inset
+
+ If p_1 
+\backslash
+geq p_2 and is greater thant he break even point then the buyer is always
+ going to wait for the next stage
+\begin_inset Formula 
+\[
+\delta p_{2}(1-p_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In order to maximize the expected revnue
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Enumerate
+Do the FOC
+\begin_inset Formula 
+\begin{eqnarray*}
+E[\pi] & = & p_{2}[1-F(v^{*})]v^{*}(1-v^{*})\\
+p_{2} & = & \frac{v^{*}}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Plug it in plug it in
+\begin_inset Formula 
+\begin{align*}
+\frac{v^{*}(2-\delta)}{2} & =p_{1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Question 3 (Bernheim)
 \end_layout
 
@@ -6263,6 +6432,162 @@ target "http://economics.stanford.edu/files/EconComps/202seq_comp_2009spr.pdf"
 \end_layout
 
 \begin_layout Subsection
+Question 5 (Bernheim)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+The way to start any of the spatial differentiation models is to start by
+ finding the point of indifference for the consumers.
+\end_layout
+
+\begin_layout Standard
+Say that 
+\begin_inset Formula $\tilde{\theta}$
+\end_inset
+
+ is the preference point at which all consumers below that will go to firm
+ A and all consumers above that will go to firm B.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+v-p_{A}-t_{A}\tilde{\theta} & =v-p_{B}-t_{B}|\tilde{\theta}-1|\\
+-p_{A}-t_{A}\tilde{\theta} & =-p_{B}-t_{B}|\tilde{\theta}-1|\\
+p_{A}+t_{A}\tilde{\theta} & =p_{B}+t_{B}|\tilde{\theta}-1|\\
+p_{A}+t_{A}\tilde{\theta} & =p_{B}+t_{B}1-\tilde{\theta}\\
+\tilde{\theta} & =\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i.
+ We can say that
+\end_layout
+
+\begin_layout Standard
+Firm A gets 
+\begin_inset Formula 
+\[
+\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in sales
+\end_layout
+
+\begin_layout Standard
+Firm B gets
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1-\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ii.
+ Firm 1 gets
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(p_{A}-c)\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in profit
+\end_layout
+
+\begin_layout Standard
+Firm 2 gets
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(p_{B}-c)(1-\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+iii.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{p_{A}}(p_{A}-c)\frac{p_{B}-p_{A}+t_{B}}{t_{A}-t_{B}}\\
+FOC\\
+p_{A} & =\frac{p_{B}+t_{B}+c}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+iv.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+p_{A} & =\frac{\frac{1}{2}(p_{A}+t_{A}+c)+t_{B}+c}{2}\\
+ & =\frac{t_{A}+2t_{B}+3c}{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+v.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\pi_{i} & =\frac{(t_{i}+2t_{j})^{2}}{9(t_{i}+t_{j})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Question 6 (Bernheim)
 \end_layout
 
@@ -6727,10 +7052,6 @@ We know that if g^* is above 30 then no selfish B would make that gift.
 
 \begin_layout Enumerate
 They all have the same payoffs.
-\end_layout
-
-\begin_layout Enumerate
-
 \end_layout
 
 \begin_layout Section
