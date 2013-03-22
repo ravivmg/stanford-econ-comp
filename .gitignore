@@ -8,6 +8,9 @@ files/*_final.pdf
 \#*#
 *.lyx~
 
+# Don't include the summaries just yet
+summaries.lyx
+
 # Usual ignores from GitHub
 *.acn
 *.acr
