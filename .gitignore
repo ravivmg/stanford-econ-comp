@@ -11,6 +11,9 @@ files/*_final.pdf
 # Don't include the summaries just yet
 summaries.lyx
 
+# Don't include the DS_Store file
+.DS_Store
+
 # Usual ignores from GitHub
 *.acn
 *.acr
