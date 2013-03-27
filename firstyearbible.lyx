@@ -345,6 +345,123 @@ To get
 \end_layout
 
 \begin_layout Section
+Comp 2008 Fall
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/metrics_2008s_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/EconComps/metrics_comp_2008aut.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 4 (MaCurdy)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+False
+\end_layout
+
+\begin_layout Standard
+When we perform NLS then we 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\min_{\beta}\frac{1}{T}\sum(y_{t}-\exp(x_{t}^{\prime}\beta))^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The FOC of this are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2}\sum2(y_{t}-\exp(x_{t}^{\prime}\hat{\beta}))(\exp(x_{t}^{\prime}\hat{\beta})x_{t}^{\prime}) & =0\\
+\frac{1}{2}\sum2l_{t}(\hat{\beta}) & =0\\
+\sum^{T}l_{t}(\hat{\beta}) & =0\\
+l_{t}(\hat{\beta}) & =u_{t}\exp(x_{t}^{\prime}\hat{\beta})x_{t}^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So what does 
+\backslash
+hat{
+\backslash
+beta} go to asymptotically?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{\beta}-\beta & =-((\frac{1}{T}\sum^{T}\frac{\partial l_{t}(b)}{\partial b}|_{b=\tilde{\beta}})^{-1}\frac{1}{T}\sum l_{t}(b)|_{b=\beta})\\
+\tilde{\beta} & \in(\beta,\hat{\beta})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What we want to know is when is plim of this going to be 0? When is 
+\begin_inset Formula $\hat{\beta}$
+\end_inset
+
+ consistent for true 
+\begin_inset Formula $\beta$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+The question can be rewritten as when does 
+\begin_inset Formula $\frac{1}{T}\sum l_{t}(b)=E(l_{t}(\beta))=E(u_{t}\exp(x_{t}^{\prime}\beta)x_{t})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So if 
+\begin_inset Formula $E(u_{t}|x_{t})=0$
+\end_inset
+
+ that is sufficient.
+\end_layout
+
+\begin_layout Section
 Comp 2008 Spring
 \end_layout
 
@@ -702,7 +819,7 @@ Yes it reaches because it is log likelihood correctly specified.
 \end_layout
 
 \begin_layout Subsection
-Question 1 (Hansen/Hong)
+Question 2 (Hansen/Hong)
 \end_layout
 
 \begin_layout Standard
@@ -1569,6 +1686,38 @@ E(\bar{Y}_{2})
 \begin_layout Standard
 We don't really know what that last covariance thing is so no reason to
  plug it into the thing.
+\end_layout
+
+\begin_layout Section
+Comp 2012 Spring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/metrics_2012s_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/June%202012%20metric%20comp_1.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 5 (MaCurdy)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
 \end_layout
 
 \begin_layout Part
