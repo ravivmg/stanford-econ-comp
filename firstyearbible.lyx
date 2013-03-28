@@ -1720,6 +1720,286 @@ Question 5 (MaCurdy)
 Part a
 \end_layout
 
+\begin_layout Standard
+Start with the 
+\begin_inset Formula 
+\begin{align*}
+l_{t} & =Derivative(y_{t}-c-d_{t}a+x_{t}b+e_{t})\\
+L_{T} & =\frac{1}{T}\sum^{T}l_{t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By the First order conditions
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+L_{T}(\hat{a},\hat{b},\hat{c}) & =\begin{cases}
+\frac{1}{T}\sum(y_{t}-c-d_{t}a+x_{t}b)=0\\
+\frac{1}{T}\sum(y_{t}-c-d_{t}a+x_{t}b)d_{t}=0\\
+\frac{1}{T}\sum(y_{t}-c-d_{t}a+x_{t}b)b=0
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But let's say that we plugged in the true parameters for
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+L_{T}(\alpha,\beta,\tilde{c}) & =\begin{cases}
+\frac{1}{T}\sum(y_{t}-\tilde{c}-d_{t}\alpha+x_{t}\beta) & =\frac{1}{T}\sum\epsilon_{t}-\tilde{c}_{t}\\
+\frac{1}{T}\sum(y_{t}-\tilde{c}-d_{t}\alpha+x_{t}\beta)d_{t} & =\frac{1}{T}\sum(\epsilon_{t}-\tilde{c}_{t})d_{t}\\
+\frac{1}{T}\sum(y_{t}-\tilde{c}-d_{t}\alpha+x_{t}\beta)\beta & =\frac{1}{T}\sum(\epsilon_{t}-\tilde{c}_{t})\beta
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $\text{plim }\tilde{c}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\tilde{c} & =y_{t}-d_{t}\alpha-x_{t}\beta=\epsilon_{t}\\
+ & =\text{plim }\frac{1}{T}\sum\epsilon_{t}=\mu
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\text{plim }L_{T}(\alpha,\beta,\tilde{c}) & =\begin{cases}
+E(\epsilon_{t}-\tilde{c}_{t}) & =0\\
+E(\epsilon_{t}-\tilde{c}_{t})d_{t} & =\mu-ugliness\\
+E(\epsilon_{t}-\tilde{c}_{t})\beta & =0
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+You might be tempted to say, sure, just run
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y_{t}-2d_{t} & =x_{t}\beta+\epsilon_{t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But let's just check if that is really consistent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+l_{t}(\beta) & =(y_{t}-2d_{t}-x_{t}\beta)x_{t}\\
+L_{T}(\hat{\beta}) & =\frac{1}{T}\sum(y_{t}-2d_{t}-x_{t}\beta)x_{t}=0\\
+\text{plim }L_{T}(\hat{\beta}) & =\text{plim }\frac{1}{T}\sum(y_{t}-2d_{t}-x_{t}\hat{\beta})x_{t}\\
+ & =\text{plim }\frac{1}{T}\sum\epsilon_{t}x_{t}\\
+ & =\mu E(x)\\
+ & =\frac{1}{2}\mu
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, this is only consistent if you added a constant term to the regression.
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+Our original FOC for IV are 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+L_{T}(\hat{a},\hat{b},\hat{c}) & =\begin{cases}
+\frac{1}{T}\sum(y_{t}-\hat{c}-d_{t}\hat{a}+x_{t}\hat{b})=0\\
+\frac{1}{T}\sum(y_{t}-\hat{c}-d_{t}\hat{a}+x_{t}\hat{b})z_{t}=0\\
+\frac{1}{T}\sum(y_{t}-\hat{c}-d_{t}\hat{a}+x_{t}\hat{b})x_{t}=0
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You would need all of these things to go to 0 to get consistent estimates.
+\end_layout
+
+\begin_layout Standard
+How do we get the asymptotic distribution?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\theta_{0} & =\begin{pmatrix}\alpha\\
+\beta\\
+\mu
+\end{pmatrix}\\
+X & =\begin{pmatrix}1\\
+d_{t}\\
+x_{t}
+\end{pmatrix}\\
+Z & =\begin{pmatrix}1\\
+z_{t}\\
+x_{t}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}(\hat{\theta}-\theta_{0}) & \to_{d}N(0,S^{-1}(\theta_{0})V(\theta_{0})S^{-1}(\theta_{0}))
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S(\theta_{0}) & =\text{plim }\frac{1}{T}\sum\frac{\partial l_{t}}{\partial\theta^{\prime}}=E(Z_{t}X_{t}^{\prime})\\
+V(\theta_{0}) & =\text{plim }\frac{1}{T}\sum l_{t}(\theta_{0})l_{t}(\theta_{0})^{\prime}=E((\epsilon_{t}-\mu)^{2}Z_{t}Z_{t})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part e
+\end_layout
+
+\begin_layout Standard
+We are doing 2SLS here.
+ We are using both exogenous variables and using a linear combination of
+ them, just like doing a linear projection of the exogenous variables.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+L_{T}(\hat{a}_{1},\hat{a}_{2}) & =\begin{cases}
+\frac{1}{T}\sum(d_{t}-\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2}))\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2})x_{t}=0\\
+\frac{1}{T}\sum(d_{t}-\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2}))\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2})z_{t}=0
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+E(d_{t}|x_{t},z_{t}) & =\exp(\alpha_{1}x_{t}+\alpha_{2}z_{t})E(\exp(\rho\epsilon_{t}|x_{t},z_{t}))\\
+ & =\exp(\alpha_{1}x_{t}+\alpha_{2}z_{t})E(\exp(\rho\mu+\frac{1}{2}\rho^{2}\sigma^{2}))\\
+ & =\exp(\alpha_{1}x_{t}+\alpha_{2}z_{t})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{plim }L_{T}(\alpha_{1},\alpha_{2})=\begin{cases}
+E[E[(d_{t}-\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2}))\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2})x_{t}|x_{t},z_{t}]]=0\\
+E[E[(d_{t}-\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2}))\exp(x_{t}\hat{a}_{1}+z_{t}\hat{a}_{2})z_{t}|x_{t},z_{t}]]=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Micro
 \end_layout
