@@ -233,6 +233,341 @@ Comps
 \end_layout
 
 \begin_layout Section
+Comp 2001 Spring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/metrics_2001s_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/EconComps/metrics_comp_2001spr.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 1
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{P(X|\lambda=\frac{1}{4},\mu=\frac{1}{6})}{P(X|\lambda=\frac{1}{4},\mu=\frac{1}{6})} & \geq k\\
+\frac{\frac{N!}{N_{1}!N_{2}!N_{3}!N_{4}!}(\frac{1}{4})^{N_{1}}(\frac{1}{6})^{N_{2}}(\frac{5}{12})^{N_{3}}(\frac{1}{6})^{N_{4}}}{\frac{N!}{N_{1}!N_{2}!N_{3}!N_{4}!}(\frac{1}{5})^{N_{1}}(\frac{1}{5})^{N_{2}}(\frac{2}{5})^{N_{3}}(\frac{1}{5})^{N_{4}}} & \geq k
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{P(X|\lambda=\frac{1}{4},\mu=\frac{1}{6})}{P(X|\lambda=\frac{1}{4},\mu=\frac{1}{6})} & \geq k\\
+P\left(\frac{\frac{2!}{N_{1}!N_{2}!N_{3}!N_{4}!}(\frac{1}{4})^{N_{1}}(\frac{1}{6})^{N_{2}}(\frac{5}{12})^{N_{3}}(\frac{1}{6})^{N_{4}}}{\frac{2!}{N_{1}!N_{2}!N_{3}!N_{4}!}(\frac{1}{5})^{N_{1}}(\frac{1}{5})^{N_{2}}(\frac{2}{5})^{N_{3}}(\frac{1}{5})^{N_{4}}}\geq k\right) & =0.2\\
+\log\frac{(\frac{1}{4})^{N_{1}}(\frac{1}{6})^{N_{2}}(\frac{5}{12})^{N_{3}}(\frac{1}{6})^{N_{4}}}{(\frac{1}{5})^{N_{1}}(\frac{1}{5})^{N_{2}}(\frac{2}{5})^{N_{3}}(\frac{1}{5})^{N_{4}}} & \geq\log k\\
+N_{1}\log(\frac{5}{4})+N_{2}\log(\frac{5}{6})+N_{3}\log(\frac{25}{24})+N_{4}\log(\frac{5}{6}) & \geq\log k
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comp 2007 Fall
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/metrics_2007f_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/EconComps/metrics_comp_2007aut.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 5 (Wolak)
+\end_layout
+
+\begin_layout Subsubsection
+Part a
+\end_layout
+
+\begin_layout Standard
+Write the DGP as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Y_{i} & =E(Y_{i}|X_{i})+\eta_{i}\\
+ & =\alpha+\beta X_{i}+\eta_{i}\\
+E(\eta_{i}|X_{i}) & =0\\
+V(\eta_{i}|X_{i}) & =V(Y_{i}-\alpha-\beta X_{i}|X_{i})\\
+ & =V(\alpha+\beta_{i}X_{i}+\epsilon_{i}|X_{i})\\
+ & =V(\beta_{i}X_{i}+\epsilon_{i}|X_{i})\\
+ & =V(\beta_{i}X_{i}+\epsilon_{i}|X_{i})\\
+ & =\sigma_{2}^{2}X_{i}^{2}+\sigma_{1}^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that there is no covariance beween 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{i}$
+\end_inset
+
+ because they are iid.
+ 
+\end_layout
+
+\begin_layout Standard
+Then we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\begin{bmatrix}\hat{\alpha}\\
+\hat{\beta}
+\end{bmatrix} & =\begin{bmatrix}\frac{1}{T}\sum1 & \frac{1}{T}\sum X_{i}\\
+\frac{1}{T}\sum X_{i} & \frac{1}{T}\sum X_{i}^{2}
+\end{bmatrix}^{-1}\begin{bmatrix}\frac{1}{T}\sum Y_{i}\\
+\frac{1}{T}\sum X_{i}Y_{i}
+\end{bmatrix}\\
+ & =\begin{bmatrix}\frac{1}{T}\sum1 & \frac{1}{T}\sum X_{i}\\
+\frac{1}{T}\sum X_{i} & \frac{1}{T}\sum X_{i}^{2}
+\end{bmatrix}^{-1}\begin{bmatrix}\frac{1}{T}\sum\alpha+\beta X_{i}+\eta_{i}\\
+\frac{1}{T}\sum X_{i}(\alpha+\beta X_{i}+\eta_{i})
+\end{bmatrix}\\
+ & =\begin{bmatrix}\frac{1}{T}\sum1 & \frac{1}{T}\sum X_{i}\\
+\frac{1}{T}\sum X_{i} & \frac{1}{T}\sum X_{i}^{2}
+\end{bmatrix}^{-1}\begin{bmatrix}\frac{1}{T}\sum\eta_{i}\\
+\frac{1}{T}\sum X_{i}\eta_{i}
+\end{bmatrix}+\begin{bmatrix}\alpha\\
+\beta
+\end{bmatrix}\\
+\text{plim }\begin{bmatrix}\hat{\alpha}\\
+\hat{\beta}
+\end{bmatrix} & =\begin{bmatrix}\alpha\\
+\beta
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Used the LLN to get the plim.
+\end_layout
+
+\begin_layout Subsubsection
+Part b
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+V(\eta_{i}) & =V(E(\eta_{i}|X_{i}))+E(V(\eta_{i}|X_{i}))\\
+ & =E(\sigma_{2}^{2}X_{i}^{2}+\sigma_{1}^{2})\\
+ & =\sigma_{2}^{2}E(X_{i}^{2})+\sigma_{1}^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+V(\eta_{i}X_{i}) & =V(E(\eta_{i}X_{i}|X_{i}))+E(V(\eta_{i}X_{i}|X_{i}))\\
+ & =E(X_{i}^{2}(\sigma_{2}^{2}X_{i}^{2}+\sigma_{1}^{2}))\\
+ & =\sigma_{2}^{2}E(X_{i}^{4})+\sigma_{1}^{2}E(X_{i}^{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Cov(\eta_{i},\eta_{i}X_{i}) & =E(\eta_{i}\eta_{i}X_{i})-E(\eta_{i})E(\eta_{i}X_{i})\\
+ & =E(\eta_{i}^{2}X_{i})\\
+ & =E((\alpha+\beta X_{i})X_{i})\\
+ & =E((Y_{i}-\alpha-\beta X_{i})X_{i})\\
+ & =E(Y_{i}X_{i}-\alpha X_{i}-\beta X_{i}X_{i})\\
+ & =E(Y_{i}X_{i})-\alpha E(X_{i})-\beta E(X_{i}X_{i})\\
+ & =E((\alpha+\beta_{i}X_{i}+\epsilon_{i})X_{i})-\alpha E(X_{i})-\beta E(X_{i}^{2})\\
+ & =E(\alpha X_{i}+\beta_{i}X_{i}^{2}+\epsilon_{i}X_{i}-\alpha E(X_{i})-\beta E(X_{i}^{2}))\\
+ & =\alpha E(X_{i})+\beta_{i}E(X_{i}^{2})+E(\epsilon_{i}X_{i})-\alpha E(X_{i})-\beta E(X_{i}^{2})\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I used the independence of the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ to show covariance is 0.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+\sqrt{T}\begin{bmatrix}\hat{\alpha}-\alpha\\
+\hat{\beta}-\beta
+\end{bmatrix} & =\begin{bmatrix}\frac{1}{T}\sum1 & \frac{1}{T}\sum X_{i}\\
+\frac{1}{T}\sum X_{i} & \frac{1}{T}\sum X_{i}^{2}
+\end{bmatrix}^{-1}\begin{bmatrix}\frac{1}{T}\sum\eta_{i}\\
+\frac{1}{T}\sum X_{i}\eta_{i}
+\end{bmatrix}+\begin{bmatrix}\alpha\\
+\beta
+\end{bmatrix}\\
+ & =Q^{-1}\begin{bmatrix}\frac{1}{T}\sum\eta_{i}\\
+\frac{1}{T}\sum X_{i}\eta_{i}
+\end{bmatrix}+\begin{bmatrix}\alpha\\
+\beta
+\end{bmatrix}\\
+ & \to_{d}N(0,Q^{-1}\begin{bmatrix}V(\eta_{i}) & 0\\
+0 & V(\eta_{i}X_{i})
+\end{bmatrix}Q^{-1\prime})\\
+ & \to_{d}N(0,Q^{-1}\begin{bmatrix}\sigma_{2}^{2}E(X_{i}^{2})+\sigma_{1}^{2} & 0\\
+0 & \sigma_{2}^{2}E(X_{i}^{4})+\sigma_{1}^{2}E(X_{i}^{2})
+\end{bmatrix}Q^{-1\prime})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part c
+\end_layout
+
+\begin_layout Standard
+We have conditional heteroskedasticity here because the variance of the
+ 
+\begin_inset Formula $\eta_{i}$
+\end_inset
+
+ does depend on 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+.
+ Therefore, we would need to use robust standard errors.
+\end_layout
+
+\begin_layout Subsubsection
+Part d
+\end_layout
+
+\begin_layout Standard
+We can use FGLS.
+ Run OLS to get the 
+\backslash
+hat{
+\backslash
+alpha} and 
+\backslash
+hat{
+\backslash
+beta} and the estimated variance-covariance matrix.
+ Next run the FGLS 
+\end_layout
+
+\begin_layout Section
 Comp 2007 Spring
 \end_layout
 
@@ -8073,6 +8408,641 @@ Comps
 \end_layout
 
 \begin_layout Section
+Comp 2012 Spring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/micro_2012s_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/May%202012%20%20macro%20210%20comp.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 1 (Amador)
+\end_layout
+
+\begin_layout Subsubsection
+Part 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{\{c_{t}^{A}\},\{c_{t}^{B}\}}\alpha_{A}U(c_{t}^{A})+(1-\alpha_{A})U(c_{t}^{B})\\
+s.t.\\
+c_{t}^{i}\geq0\\
+\sum_{i}c_{t}^{i}=\sum_{i}e_{t}^{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plugging in the utility functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{\{c_{t}^{A}\},\{c_{t}^{B}\}}\sum_{t}\alpha_{A}\beta_{A}^{t}u(c_{t}^{A})+(1-\alpha_{A})\beta_{B}^{t}u(c_{t}^{B})\\
+s.t.\\
+c_{t}^{i}\geq0\\
+c_{t}^{A}+c_{t}^{B}=y_{t}^{A}+y_{t}^{B}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first order conditions are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+[c_{t}^{A}] & \alpha_{A}\beta_{A}^{t}u^{\prime}(c_{t}^{A})=\lambda_{t}\\
+{}[c_{t}^{B}] & (1-\alpha_{A})\beta_{B}^{t}u^{\prime}(c_{t}^{B})=\lambda_{t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To use the Negishi method, we need to know that the First Welfare Theorem
+ holds.
+ For the FWT to hold we need the utility functions to be increasing in 
+\begin_inset Formula $c_{t}$
+\end_inset
+
+.
+ We also need the Inada condition to hold so that we don't need to include
+ an additional constraint for non-negativity.
+\end_layout
+
+\begin_layout Subsubsection
+Part 2
+\end_layout
+
+\begin_layout Standard
+Setting the first order conditions equal to each other we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\alpha_{A}\beta_{A}^{t}u^{\prime}(c_{t}^{A}) & =(1-\alpha_{A})\beta_{B}^{t}u^{\prime}(c_{t}^{B})\\
+u^{\prime}(c_{t}^{A}) & =\frac{(1-\alpha_{A})\beta_{B}^{t}u^{\prime}(c_{t}^{B})}{\alpha_{A}\beta_{A}^{t}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since agent B's consumption will go to 0 as time goes on while agent A will
+ consume the almost the total endowment...
+\end_layout
+
+\begin_layout Subsubsection
+Part 3
+\end_layout
+
+\begin_layout Standard
+In the long-run, since 
+\begin_inset Formula $\beta_{A}^{t}\geq\beta_{B}^{t}$
+\end_inset
+
+, then we know that as t goes to infinity then agent B doesn't really get
+ any utility from consumption.
+ Thus, agent A would consume the entire endowment.
+\end_layout
+
+\begin_layout Subsubsection
+Part 4
+\end_layout
+
+\begin_layout Standard
+A competitive equilibrium is a set of consumption plans, 
+\begin_inset Formula ${c_{t}^{A}}$
+\end_inset
+
+ and 
+\begin_inset Formula ${c_{t}^{B}}$
+\end_inset
+
+, such that given prices, 
+\begin_inset Formula ${p_{t}}$
+\end_inset
+
+, agent A solves the maximization problem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{\{c_{t}^{i}\}}\sum_{t}\beta_{i}^{t}u(c_{t}^{i})\\
+s.t.\\
+\sum_{t}p_{t}c_{t}^{i}\leq a_{0}+\sum_{t}p_{t}y_{t}^{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and agent B solves
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{\{c_{t}^{i}\}}\sum_{t}\beta_{i}^{t}u(c_{t}^{i})\\
+s.t.\\
+\sum_{t}p_{t}c_{t}^{i}\leq\sum_{t}p_{t}y_{t}^{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Furthermore, the market clearing condition must hold so that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{i}c_{t}^{i}\leq a_{0}+\sum_{t}e_{t}^{i} & \equiv c_{t}^{A}+c_{t}^{B}\leq a_{0}+y_{t}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 5
+\end_layout
+
+\begin_layout Standard
+In the long run, only agent A eats, so we look at this FOC:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+[c_{t}^{i}] & \beta_{i}^{t}u^{\prime}(c_{t}^{i})=\lambda p_{t}\\
+{}[c_{t+1}^{i}] & \beta_{i}^{t+1}u^{\prime}(c_{t+1}^{i})=\lambda p_{t+1}\\
+\frac{\beta_{i}^{t}u^{\prime}(c_{t}^{i})}{p_{t}} & =\frac{\beta_{i}^{t+1}u^{\prime}(c_{t+1}^{i})}{p_{t+1}}\\
+\frac{p_{t+1}}{u^{\prime}(c_{t+1}^{i})} & =\beta_{i}\frac{p_{t}}{u^{\prime}(c_{t}^{i})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $p_{0}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{p_{t}}{u^{\prime}(c_{t}^{i})} & =\beta_{i}^{t}\frac{1}{u^{\prime}(c_{0}^{i})}\\
+p_{t} & =\beta_{i}^{t}\frac{u^{\prime}(c_{t}^{i})}{u^{\prime}(c_{0}^{i})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that the one period interest rate is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+1+r_{t} & =\frac{p_{t}}{p_{t+1}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plugging in we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+1+r_{t} & =\beta_{A}^{t}\frac{u^{\prime}(c_{t}^{A})}{u^{\prime}(c_{0}^{A})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Say instead that 
+\begin_inset Formula $u_{A}(c)=c$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+1+r_{t} & =\beta_{A}^{t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 6
+\end_layout
+
+\begin_layout Standard
+I know the Gorman theorem...
+\end_layout
+
+\begin_layout Section
+Comp 2012 Fall
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "./files/micro_2012f_comp.pdf"
+type "file:"
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Online"
+target "http://economics.stanford.edu/files/Sept%202012%20macro%20comp_0.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Question 1 (Amador)
+\end_layout
+
+\begin_layout Subsubsection
+Part 1
+\end_layout
+
+\begin_layout Standard
+A competitive equilibrium is a pair of consumption plans, 
+\begin_inset Formula ${c_{t}^{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula ${c_{t}^{2}}$
+\end_inset
+
+, such that given prices, 
+\begin_inset Formula ${p_{t}}$
+\end_inset
+
+, the consumption plans solve the following maximization problem for each
+ agent
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\max_{\{c_{t}^{i}\}_{t=0}^{\infty}}\sum\beta^{t}\log(c_{t}^{i})\\
+s.t.\\
+\sum_{t}p_{t}c_{t}^{i}\leq\sum_{t}p_{t}e_{t}^{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition, the market clearing condition must hold, which says that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{i}c_{t}^{i} & =\sum_{i}e_{t}^{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 2
+\end_layout
+
+\begin_layout Standard
+Set up the Lagrangian and take first order conditions to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{L}=\sum\beta^{t}\log(c_{t}^{i})-\lambda(\sum_{t}p_{t}c_{t}^{i}-\sum_{t}p_{t}e_{t}^{i})\\
+{}[c_{t}] & \frac{\beta^{t}}{c_{t}^{i}}=\lambda p_{t}\\
+{}[c_{t+1}] & \frac{\beta^{t+1}}{c_{t+1}^{i}}=\lambda p_{t+1}\\
+\beta^{t+1}c_{t}^{i}p_{t} & =\beta^{t}c_{t+1}^{i}p_{t+1}\\
+\beta c_{t}^{i}p_{t} & =c_{t+1}^{i}p_{t+1}\\
+\beta^{t}c_{0}^{i} & =c_{t}^{i}p_{t}\\
+p_{t} & =\frac{\beta^{t}c_{0}^{i}}{c_{t}^{i}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the market clearing condition
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+(c_{t}^{1}+c_{t}^{2}) & =(e_{t}^{1}+e_{t}^{2})\\
+\beta^{t}(c_{0}^{1}+c_{0}^{2}) & =p_{t}(c_{t}^{1}+c_{t}^{2})\\
+\beta^{t}y_{1} & =p_{t}(e_{t}^{1}+e_{t}^{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus we get that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+p_{t} & =\begin{cases}
+\beta^{t} & t\in\{0,3,6,...\}\\
+\beta^{t}\frac{y_{1}}{y_{2}} & t\in\{1,2,4,5,...\}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the budget constraint to say
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{t}p_{t}c_{t}^{i} & =\sum_{t}p_{t}e_{t}^{i}\\
+\sum_{t}\frac{\beta^{t}c_{0}^{i}}{c_{t}^{i}}c_{t}^{i} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{i}\sum_{t}\beta^{t} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{i}\frac{1}{1-\beta} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{1}\frac{1}{1-\beta} & =p_{0}y_{1}+p_{3}y_{1}+p_{6}y_{1}+...\\
+c_{0}^{1}\frac{1}{1-\beta} & =y_{1}\sum_{t=0}^{\infty}p_{3t}\\
+c_{0}^{1}\frac{1}{1-\beta} & =y_{1}\sum_{t=0}^{\infty}\beta^{3t}\\
+c_{0}^{1}\frac{1}{1-\beta} & =y_{1}\frac{1}{1-\beta^{3}}\\
+c_{0}^{1} & =y_{1}\frac{1-\beta}{1-\beta^{3}}\\
+c_{t}^{1} & =\begin{cases}
+c_{0}^{1} & t\in\{0,3,6,...\}\\
+c_{0}^{1}\frac{y_{2}}{y_{1}} & t\in\{1,2,4,5,...\}
+\end{cases}\\
+ & =\begin{cases}
+y_{1}\frac{1-\beta}{1-\beta^{3}} & t\in\{0,3,6,...\}\\
+y_{2}\frac{1-\beta}{1-\beta^{3}} & t\in\{1,2,4,5,...\}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now to solve for the 
+\begin_inset Formula $c^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{t}p_{t}c_{t}^{i} & =\sum_{t}p_{t}e_{t}^{i}\\
+\sum_{t}\frac{\beta^{t}c_{0}^{i}}{c_{t}^{i}}c_{t}^{i} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{i}\sum_{t}\beta^{t} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{i}\frac{1}{1-\beta} & =\sum_{t}p_{t}e_{t}^{i}\\
+c_{0}^{2}\frac{1}{1-\beta} & =p_{1}y_{2}+p_{2}y_{2}+p_{4}y_{2}+p_{5}y_{2}+...\\
+c_{0}^{2}\frac{1}{1-\beta} & =y_{1}(\beta_{1}+\beta_{2}+\beta_{4}+\beta_{5}...)\\
+c_{0}^{2}\frac{1}{1-\beta} & =y_{1}(\sum_{t}\beta^{t}-\sum_{t}\beta^{3t})\\
+c_{0}^{2}\frac{1}{1-\beta} & =y_{1}(\frac{1}{1-\beta}-\frac{1}{1-\beta^{3}})\\
+c_{0}^{2} & =y_{1}\frac{1-\beta}{1}(\frac{1}{1-\beta}-\frac{1}{1-\beta^{3}})\\
+c_{0}^{2} & =y_{1}(1-\frac{1}{1-\beta^{3}})\\
+c_{t}^{2} & =\begin{cases}
+c_{0}^{2} & t\in\{0,3,6,...\}\\
+c_{0}^{2}\frac{y_{2}}{y_{1}} & t\in\{1,2,4,5,...\}
+\end{cases}\\
+ & =\begin{cases}
+y_{1}(1-\frac{1}{1-\beta^{3}}) & t\in\{0,3,6,...\}\\
+y_{2}(1-\frac{1}{1-\beta^{3}}) & t\in\{1,2,4,5,...\}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let's impose that consumption is the same in all periods:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y_{1}\frac{1-\beta}{1-\beta^{3}} & =y_{1}(1-\frac{1}{1-\beta^{3}})\\
+\beta^{3}-\beta+1 & =0\\
+y_{2}\frac{1-\beta}{1-\beta^{3}} & =y_{2}(1-\frac{1}{1-\beta^{3}})\\
+\beta^{3}-\beta+1 & =0\\
+\beta(\beta^{2}-1) & =-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, we get that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+2y_{1}\frac{1-\beta}{1-\beta^{3}} & =y_{1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 3
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\beta$
+\end_inset
+
+ goes to one then the agent values each period exactly the same.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\beta$
+\end_inset
+
+ goes to zero then the agent only values the first period's consumption.
+\end_layout
+
+\begin_layout Subsubsection
+Part 4
+\end_layout
+
+\begin_layout Standard
+Know that price and interest rates are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+q_{t} & =\frac{1}{1+r_{t}}=\frac{p_{t+1}}{p_{t}}\\
+ & =\frac{1}{1+\delta^{t}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At time t=0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+q_{0} & =\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Part 5
+\end_layout
+
+\begin_layout Standard
+We know from here
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\beta^{t}c_{0}^{i} & =c_{t}^{i}p_{t}\\
+c_{t}^{i} & =\frac{\beta^{t}c_{0}^{i}}{p_{t}}\\
+c_{t}^{1}+c_{t}^{2} & =\frac{\beta^{t}(c_{0}^{1}+c_{0}^{2})}{p_{t}}\\
+y & =\frac{\beta^{t}y}{p_{t}}\\
+1 & =\frac{\beta^{t}}{p_{t}}\\
+p^{t} & =\beta^{t}\\
+\frac{p_{t+1}}{p_{t}} & =\beta=q_{t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Comp 2009 Spring
 \end_layout
 
@@ -8152,353 +9122,6 @@ So
 \begin{align*}
 \pi_{t} & =\beta^{t}(c_{t})^{-\gamma}
 \end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
-Sample Study Schedule
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="7">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Date
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Field
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Course
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Comp
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Season
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Question
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Difficulty
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3/29/13
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Macro
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-210a
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2012
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Fall
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Easy
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
